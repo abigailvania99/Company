@@ -1,0 +1,308 @@
+/* awal margin dan padding 0% */
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+/* tulisan company berada di kiri */
+.header2{
+    float: left;
+    padding: 14px 30px;
+    margin:auto;
+
+}
+/* tulisan pada header rata kanan */
+.header3{
+    text-align: right;
+    margin:auto;
+}
+
+/* dropdown di buat inline-block agar dapat sebaris dengan div yang setingkat */
+.dropdown{
+
+    display: inline-block;
+    position: relative;/* supaya nurunin sifat */
+}
+
+/* dropdown_company di buat inline-block agar dapat sebaris dengan div class dropdown */
+.dropdown_company{
+
+    display: inline-block;
+    position: relative;
+
+    /* margin-right: 300px; */
+
+}
+
+/* masing-masing tulisan pada header diberi padding top, bottom 14px, left dan right 30px*/
+.btn{
+     padding: 14px 30px; 
+}
+
+/* submenu */
+.item{
+    /* posisi absolute berdiri sendiri tidak bergantung pada div parent */
+    position: absolute;
+    text-align: left;
+    background-color: white;
+    color: black;
+    width: 200%;
+    /* panjang item berdasarkan btn */
+    display: none;
+    /* utk berada di depannya  */
+    z-index: 1;
+}
+
+/* untuk a href, tidak ada underline dan warna text berwarna hitam */
+a{
+    text-decoration: none;
+    color: black;
+
+}
+
+/* ketika submenu di hover, maka background submenu menjadi warna hitam dan tulisan berwarna putih */
+.item>div:hover{
+    background-color: black;
+    color: white;
+}
+
+/* submenu about diberi padding top,bottom,left, right 10px */
+.item>div{
+    padding: 10px;
+}
+
+/* ketika menu about di hover, maka akan muncul submenu */
+.dropdown:hover .item{
+    display: block;
+} 
+/* ketika menu di hover maka akan menjadi warna whitesmoke */
+.dropdown:hover{
+    background-color: whitesmoke;
+}
+
+/* .slideshow-container supaya nurunin sifat menggunakan relative*/
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /*Untuk hide image */
+.mySlides {
+    display: none;
+}
+  
+  /* Next & prev button menggunakna absolute agar dapat digabungkan dengan image.
+  Ketika kursor ke arah next dan prev button, maka kursor berubah menjadi pointer.
+  Tanda panah berwarna putih */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding:20px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    /* transisi dengan waktu 0.6 detik */
+    transition: 0.6s ease;
+    user-select: none;
+}
+  
+/* next button dengan margin kanan 10px dan berada di sisi kanan */
+.next {
+    margin-right: 10px;
+    right: 0;
+}
+/* prev button dengan margin kiri 10px dan berada di sisi kiri */
+.prev{
+      margin-left: 10px;
+}
+/* untuk membuat lingkaran pada button prev dan next */
+.round{
+      border-radius: 100%;
+      border: 1px solid white;
+}
+  
+  /* ketika button prev dan next dihover, background button menjadi hitam dan panah menjadi warna putih*/
+.prev:hover, .next:hover {
+    background-color:white;
+    color: black;
+}
+  
+  /* text dalam image absolute agar bisa di gabungkan dengan image dengan tulisan yang bold 
+  dengan ukuran 20px. opacity digunakan agar warna background hitam tidak terlalu pekat*/
+.text {
+    color: #f2f2f2;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 5px;
+    position: absolute;
+    bottom: 20%;
+    left: 30%;
+    width: 50%;
+    background-color: rgb(0, 0, 0.5);
+    opacity: 0.8;
+}
+  
+  
+  /* dots inline block agar bisa satu baris dengan dot lainnya*/
+  /* ketika dot di klik kursor berubah menjadi pointer dan border radius utk membentuk lingkaran */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #717171;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/* posisi dots absolute agar bisa berada di gabungkan dengan image */
+.dots{
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+}
+  
+/* ketika dot dihover dan di klik menjadi warna whitesmoke */
+.active, .dot:hover {
+    background-color: whitesmoke;
+}
+
+/* bagian content body max panjang 1000px, margin auto dan padding 20px */
+.theContentBody{
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+}
+/* square merah, inline agar bisa sebaris dengan square lainnya */
+.square {
+    height: 150px;
+    width: 200px;
+    background-color: rgb(230, 79, 79);
+    border: 2px solid red;
+    display: inline-block;
+    position: relative;
+    margin-left: 175px;
+    
+}
+/* square hijau, inline agar bisa sebaris dengan square lainnya */
+.square2 {
+    height: 150px;
+    width: 200px;
+    background-color: rgb(12, 141, 19);
+    border: 2px solid rgb(5, 83, 22);
+    display: inline-block;
+    position: relative;
+    margin-left: 10px;
+}
+/* square biru, inline agar bisa sebaris dengan square lainnya */
+.square3 {
+    height: 150px;
+    width: 200px;
+    background-color: rgb(21, 84, 199);
+    border: 2px solid rgb(9, 18, 153);
+    display: inline-block;
+    position: relative;
+    margin-left: 10px;
+}
+
+/* segitiga berwarna merah */
+.triangle-right {
+	width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-left: 10px solid red;
+	border-bottom: 10px solid transparent;
+    position: absolute;
+    left: 200px;
+    top:75px
+}
+
+/* segitiga berwarna hijau */
+.triangle-right2{
+	width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-left: 10px solid rgb(5, 83, 22);
+	border-bottom: 10px solid transparent;
+    position: absolute;
+    left: 200px;
+    top:75px
+}
+
+/* Text content menggunakan posisi absolute agar bisa berada di  gabungkan dengan kotak dan ditengah */
+.textContent{
+    width: 150px;
+    position: absolute;
+    text-align: center;
+    padding: 15px 15px;
+}
+
+ /* mengatur ukuran gambar bank dan bulb yang ada di OUR VALUES */
+/* panjang 10px dan lebarnya 15px, margin auto kecuali bottom (10px) */ 
+.imageContent{
+      width: 10px;
+      height: 15px;
+      margin: auto;
+      margin-bottom: 10px;
+
+}
+
+/* mengatur ukuran gambar scale yang ada di OUR VALUES */
+/* panjang 15px dan lebarnya 15px, margin auto kecuali bottom (10px) */
+.imageContentScale{
+    width: 15px;
+    height: 15px;
+    margin: auto;
+    margin-bottom: 10px;
+
+}
+
+/* Tulisan contact us menjadi 30 px, berada di tengah dan bold */
+.contactUs{
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* posisi form dengan panjang maximal untuk form 500px dan margin auto */
+form{
+    max-width: 500px;
+    margin: auto;
+}
+
+/* membuat transisi pada input text field */
+input {
+    box-sizing: border-box;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+  }
+
+  /* Ketika input text field di klik maka akan ada shadow dari box,berwarna biru muda */
+input:focus {
+    border-color: #719ECE;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+/* Ketika textarea di klik maka akan ada shadow dari box,berwarna biru muda */
+textarea:focus { 
+    outline: none !important;
+    border-color: #719ECE;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+/* id komen1, komen2, dan komen3 yang berada di home.hmtl akan berwarna merah tulisannya */
+#komen1,#komen2,#komen3{
+    color: red;
+}
+
+/* footer diberi background color hitam, tulisan putih dan berada di tengah */
+footer{ 
+    background-color: black;
+    color: white;
+    text-align: center;
+}

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="home.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+<!-- HEADER -->
+        <div class="header2">
+            <!-- Tulisan company -->
+            <div class="dropdown_company">
+                <div class="btn_company">
+                    <b><p> Company</p></b>
+                </div>
+            </div>
+        </div>
+
+        <div class="header3">
+            <div class="dropdown">
+                <!-- Tulisan About -->
+                <div class="btn">ABOUT</div>
+
+                <!-- Sub Menu About -->
+                <div class="item"> 
+                    <div class="content">History</div>
+                    <div class="content">Vision Mission</div>
+                </div>
+            </div>
+
+            <!-- Tulisan OUR WORK -->
+            <div class="dropdown">
+                <div class="btn">
+                    <a href="">OUR WORK</a>
+                </div>
+            </div>
+
+            <!-- Tulisan OUR TEAM -->
+            <div class="dropdown">
+                <div class="btn">
+                    <a href="">OUR TEAM</a>
+                </div>
+            </div>
+
+            <!-- Tulisan Contact -->
+            <div class="dropdown">
+                <div class="btn">
+                    <a href="">CONTACT</a>
+                </div>
+            </div>
+
+
+        </div>
+<!-- Batas Header -->
+
+
+<!-- Untuk Slide show container -->
+    <div class="slideshow-container">
+
+        <!-- Dots untuk memilih slide -->
+        <div class="dots" style="text-align:center">
+            <!-- Dot pertama untuk menampilkan slide image pertama -->
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <!-- Dot kedua untuk menampilkan slide image kedua -->
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+
+        <!-- Image slide pertama dengan full width dan height dan kata-kata -->
+        <div class="theSlides">
+        <img src="images/download.jpg" style="width:100%;height: 100%;">
+        <!-- Kata-kata pada image slide pertama -->
+        <div class="text"><p>THIS IS A PLACE WHERE TECHNOLOGY & CREATIVITY FUSED INTO DIGITAL CHEMISTRY</p></div>
+        </div>
+    
+        <!-- Image slide kedua dengan full width dan height dan kata-kata -->
+        <div class="theSlides">
+        <img src="images/download(1).jpg" style="width:100%;height: 100%">
+        <!-- Kata-kata pada image slide kedua -->
+        <div class="text"><p>WE DON'T HAVE THE BEST BUT WE HAVE THE GREATEST TEAM</p> </div>
+        </div>
+    
+    
+        <!-- button prev dan next  -->
+        <!-- Prev akan pindah 1 slide image sebelumnya -->
+        <a class="prev round" onclick="moveSlide(-1)">&#8249;</a>
+        <!-- Next akan pindah 1 slide image setelahnya -->
+        <a class="next round" onclick="moveSlide(1)">&#8250;</a>
+  </div>
+  <br>
+    <!-- Logic pergantian slide setiap menekan dots atau prev button atau next button pada slide.js-->
+    <script src="slide.js"></script>
+<!-- Batas Slide Show container -->
+
+<!-- Bagian OUR VALUES -->
+<div class="theContentBody">
+    <!-- Tulisan OUR Values dengan font size 30px, bold dan posisi di tengah -->
+    <div><p style="font-weight: bold;text-align: center; font-size: 30px;"> OUR VALUES </p></div>
+    <br><br>
+    <!-- Div untuk bagian kotak merah -->
+    <div class="square">
+        <!-- Tulisan, gambar, dan segitiga pada bagian dalam kotak merah -->
+        <div class="textContent">
+            <!-- gambar lightbulb -->
+            <img src="images/lightbulb-o.png" class="imageContent">
+            <br>
+            <!-- tulisan innovative dengan font size 10px dan bold serta warna putih -->
+            <p style="font-size: 10px; color: white;font-weight: bold;">INNOVATIVE</p>
+            <br>
+            <!-- Tulisan keterangan innovative dengan font size 10px dan warna putih-->
+            <p style="font-size: 10px; color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime exercitationem dolorem deserunt, unde, eaque ipsa?</p>
+        </div>
+            <!-- Segitiga ke kanan berwarna merah -->
+        <div class="triangle-right"></div>
+    </div>
+    <!-- Bagian akhir kotak merah -->
+    
+    <!-- Div untuk bagian kotak hijau -->
+    <div class="square2">
+        <!-- Tulisan, gambar, dan segitiga pada bagian dalam kotak hijau -->
+        <div class="textContent">
+            <!-- Gambar bank -->
+            <img src="images/bank.png" class="imageContent">
+            <br>
+            <!-- tulisan loyalty dengan font size 10px dan bold serta warna putih -->
+            <p style="font-size: 10px; color: white;font-weight: bold;">LOYALTY</p>
+            <br>
+            <!-- Tulisan keterangan loyalty dengan font size 10px dan warna putih-->
+            <p style="font-size: 10px; color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit similique eum itaque facere temporibus dolores</p>
+        </div>
+        <!-- Segitiga ke kanan berwarna hijau-->
+        <div class="triangle-right2"></div>    
+    </div>
+    <!-- Bagian akhir kotak hijau -->
+
+    <!-- Div untuk bagian kotak biru -->
+    <div class="square3">
+        <!-- Tulisan dan gambar pada bagian dalam kotak biru -->
+        <div class="textContent">
+            <!-- gambar balance scale -->
+            <img src="images/balance-scale.png" class="imageContentScale">
+            <br>
+            <!-- tulisan respect dengan font size 10px dan bold serta warna putih -->
+            <p style="font-size: 10px; color: white;font-weight: bold;">RESPECT</p>
+            <br>
+            <!-- Tulisan keterangan respect dengan font size 10px dan warna putih-->
+            <p style="font-size: 10px; color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, sit? Tenetur et neque quod incidunt!</p>
+        </div>   
+    </div>
+    <!-- Batas akhir kotak biru -->
+    
+</div>
+<!-- Bagian akhir OUR VALUES -->
+
+<br><br><br><br><br><br><br><br><br><br>
+
+<!-- FORM dengan title CONTACT US -->
+<div class="contactUs">CONTACT US</div>
+<br><br>
+        <form action="" method="POST" id="formdata">
+        <label>Name</label><br>
+         <!--Input text dengan id name dan besar box sebesar 60  -->
+        <input type="text" name="name" id="name"size="60">
+        <br>
+        <!-- komen 1 untuk memberikan ruang untuk komen ketika field kosong -->
+        <p id="komen1"></p>
+        <br><br>
+        <label>Email</label><br> 
+        <!--Input text dengan id email dan besar box sebesar 60  -->
+        <input type="text" name="email" id="email"size="60">
+        <br>
+        <!-- komen 2 untuk memberikan ruang untuk komen ketika field kosong atau tidak sesuai format email -->
+        <p id="komen2"></p>
+        <br><br>
+        <label>Message</label><br> 
+        <!-- Textarea dengan id message dan besar box nya sebesar 60 kolom dan 10 baris -->
+        <textarea name="message" id="message" cols="60" rows="10"></textarea>
+        <br>
+        <!-- komen 3 untuk memberikan ruang untuk komen ketika field kosong -->
+        <p id="komen3"></p>
+        <br><br>
+        <!-- Button submit dengan full width, background color cornflowerblue dan dengan tulisan berwarna putih -->
+        <input type="button" style="width: 100%;background-color: cornflowerblue;color: white;"value="SUBMIT" id="btn">
+        </form>
+
+        <!-- Form di atas akan divalidasi di home.js -->
+        <script src="home.js"></script>
+
+<!-- Batas FORM -->
+
+
+    <br>
+    <br>
+    <br>
+<!-- Bagian footer -->
+    <footer>
+        Copyright &copy 2016. PT Company
+        <br>
+        <!-- Logo facebook dengan height dan width 20px dan margin kanan dan atas sebesar 5px -->
+        <a href="https://www.facebook.com/">
+            <img src="images/facebook-official.png" alt="" height="20px" width="20px" style="margin-right: 5px;margin-top: 5px;">
+        </a>
+            <!-- Logo twitter dengan height dan width 20px  dan margin atas sebesar 5 px-->
+        <a href="https://twitter.com/">
+            <img src="images/twitter.png" alt=""height="20px" width="20px" style="margin-top: 5px;">
+        </a>
+    </footer>
+<!-- Batas footer -->
+</body>
+</html>
